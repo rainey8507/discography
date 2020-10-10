@@ -1,0 +1,279 @@
+/* 
+Developer; Trang Le
+Color Palette
+light pink: #df87a1
+dark pink: #b61568, #b61669, #e9559e
+black: #0f0f0f
+
+ */
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    color: #b61568;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #b61568;
+}
+/* End of Global Styles */
+
+/* Navigation */
+nav {
+    width: 100%;
+    background: #E9559E;
+    background: -webkit-linear-gradient(top left, #E9559E, #E5CDE3);
+    background: -moz-linear-gradient(top left, #E9559E, #E5CDE3);
+    background: linear-gradient(to bottom right, #E9559E, #E5CDE3);
+}
+
+.navbar-toggler {
+    outline: none !important;
+    padding: 0;
+}
+
+.navbar-toggler img {
+    width: 40px;
+}
+
+.navbar-brand a {
+    cursor: pointer;
+}
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+a.nav-link{
+    font-weight: normal;
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}  
+
+.nav-link:hover {
+    border-bottom: 2px solid #b61568;
+}
+
+.fab {
+    color: #b61568;
+}
+
+.social-links a:hover {
+    text-decoration: none;
+}
+
+
+/* End of Navigation */
+
+/* Banner */
+.banner {
+    width: 100%;
+    background: #E9559E;
+    background: -webkit-linear-gradient(top left, #E9559E, #E5CDE3);
+    background: -moz-linear-gradient(top left, #E9559E, #E5CDE3);
+    background: linear-gradient(to bottom right, #E9559E, #E5CDE3);
+}
+.banner-img {
+    width: 95%;
+    display: block;
+}
+
+.banner-title {
+    color: #b61568;
+}
+
+.banner-text {
+    margin-top: 80px;
+    padding-top: 80px;
+}
+
+.banner-text h1 {
+    margin-left: 110px;
+}
+.btn-banner {
+    margin-left: 80px;
+    padding-left: 40px;
+}
+
+.btn-music {
+    background: transparent;
+    color: #b61568;
+    font-size: 22px;
+    border: 2px solid #b61568;
+    border-radius: 12px;
+}
+
+.btn-video {
+    color: #b61568;
+    font-size: 22px;
+    background: #fff;
+    border: 2px solid #b61568;
+    border-radius: 12px;
+}
+
+/* End of Banner */
+
+/* Albums */
+#albums {
+    width: 100%;
+}
+
+/*End of Albums */
+
+/* About */
+#about {
+    background: #E9559E;
+    background: -webkit-linear-gradient(top right, #E9559E, #E5CDE3);
+    background: -moz-linear-gradient(top right, #E9559E, #E5CDE3);
+    background: linear-gradient(to bottom left, #E9559E, #E5CDE3);
+    width: 100%;
+}
+
+.line {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-heading {
+    color: #b61568;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.read-more-text, .read-more-text:active {
+    text-decoration: none;
+    border: 2px solid #b61568;
+    cursor: pointer;
+    font-size: 20px;
+    background: transparent;
+}
+
+.read-more-text:hover {
+    background-color: #b61568;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+figcaption {
+    color: #b61568;
+}
+/*End of About */
+
+/* Latest Videos */
+#lastest-videos {
+    background: #DEC5E2;
+    background: -webkit-radial-gradient(top left, #DEC5E2, #EBD9E2);
+    background: -moz-radial-gradient(top left, #DEC5E2, #EBD9E2);
+    background: radial-gradient(to right, #DEC5E2, #EBD9E2);
+    width: 100%;
+}
+/* End of Latest Videos */
+/* Newsletter */
+#newsletter {
+    background: #E9559E;
+    background: -webkit-linear-gradient(right, #E9559E, #E5CDE3);
+    background: -moz-linear-gradient(right, #E9559E, #E5CDE3);
+    background: linear-gradient(to left, #E9559E, #E5CDE3); 
+    color: #b61568;
+}
+
+
+.row input[type='text'] {
+    color: #b61568;
+}
+.btn-submit {
+    border: 2px solid #b61568;
+    color: #b61568;
+    outline: none;
+    background: transparent;
+}
+
+.btn-submit:hover {
+    border: none;
+    outline: none;
+    background: #b61568;
+    color: #fff;
+}
+/* End of Newsletter */
+
+@media only screen and (max-width: 800px) {
+    .nav-link:hover {
+        border-bottom: none;
+        font-weight: bolder;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .banner-text {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    
+    .banner-text h1 {
+        text-align: center;
+        font-size: 30px;
+        margin: 0;
+        padding-bottom: 12px;
+    }
+    .btn-banner {
+        margin-left: 60px;
+    } 
+
+    .banner-img {
+        padding: 15px;
+    }
+
+    #newsletter {
+        padding: 18px;
+    }
+
+    .carousel-inner {
+        padding-bottom: 30px;
+    }
+
+    .about-heading {
+        padding-top: 16px;
+    }
+
+    .line {
+        width: 20%;
+        padding-bottom: 10px;
+    }
+
+    .read-more-text {
+        width: 30%;
+        margin: auto;
+        display: block;
+    }
+
+    figcaption {
+        padding-top: 14px;
+    }
+
+}
