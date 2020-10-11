@@ -71,6 +71,7 @@ a.nav-link{
 }  
 
 .nav-link:hover {
+    font-weight: bolder;
     border-bottom: 2px solid #b61568;
 }
 
@@ -100,6 +101,8 @@ a.nav-link{
 
 .banner-title {
     color: #b61568;
+    font-size: 53px;
+    padding-bottom: 12px;
 }
 
 .banner-text {
@@ -131,6 +134,9 @@ a.nav-link{
     border-radius: 12px;
 }
 
+.attribute, .attribute:hover, .attribute:active {
+    color: #b61568;
+}
 /* End of Banner */
 
 /* Albums */
@@ -138,6 +144,9 @@ a.nav-link{
     width: 100%;
 }
 
+.album-links {
+    text-decoration: none;
+}
 /*End of Albums */
 
 /* About */
@@ -147,6 +156,7 @@ a.nav-link{
     background: -moz-linear-gradient(top right, #E9559E, #E5CDE3);
     background: linear-gradient(to bottom left, #E9559E, #E5CDE3);
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .line {
@@ -164,19 +174,33 @@ a.nav-link{
     line-height: 35px;
 }
 
-.read-more-text, .read-more-text:active {
+.read-more-text, 
+.read-more-text:active,
+.read-more-text:visited {
     text-decoration: none;
     border: 2px solid #b61568;
+    outline: none;
     cursor: pointer;
     font-size: 20px;
+    color: #b61568;
+    font-size: 18px;
     background: transparent;
+    border-radius: 10px;
+    font-weight: lighter;
 }
 
-.read-more-text:hover {
-    background-color: #b61568;
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid #fff;
+.read-more-text:hover,
+.btn-music:hover,
+.btn-video:hover {
+    background: #E6D0E6;
+    background: -webkit-linear-gradient(bottom left, #E6D0E6, #D964A8);
+    background: -moz-linear-gradient(bottom left, #E6D0E6, #D964A8);
+    background: linear-gradient(to top right, #E6D0E6, #D964A8);
+    color: #b61568;
+    border: 2px solid #b61568;
+    outline: none;
+    font-weight: bold;
+    box-shadow: 0 6px 8px rgba(217, 100, 168, 0.306);
 }
 
 figcaption {
@@ -222,14 +246,19 @@ figcaption {
 /* End of Newsletter */
 
 @media only screen and (max-width: 800px) {
-    .nav-link:hover {
-        border-bottom: none;
-        font-weight: bolder;
-    }
     html, body {
         overflow-x: hidden;
     }
 
+    .nav-link:hover {
+        border-bottom: none;
+        font-weight: bolder;
+    }
+
+
+    .banner-title {
+        font-size: 20px;
+    }
     .banner-text {
         margin-top: 20px;
         padding-top: 10px;
@@ -253,10 +282,6 @@ figcaption {
         padding: 18px;
     }
 
-    .carousel-inner {
-        padding-bottom: 30px;
-    }
-
     .about-heading {
         padding-top: 16px;
     }
@@ -267,13 +292,12 @@ figcaption {
     }
 
     .read-more-text {
-        width: 30%;
-        margin: auto;
-        display: block;
+        width: 100%;
+        margin: 20px auto;
+        font-size: 16px;
+        background: #e789b2;
     }
 
-    figcaption {
-        padding-top: 14px;
-    }
+    
 
 }
